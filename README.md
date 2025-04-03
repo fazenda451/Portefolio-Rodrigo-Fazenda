@@ -53,20 +53,16 @@ npm run build
 
 2. Os arquivos de produção estarão disponíveis na pasta `dist`
 
-## 🤝 Contribuindo
-
-Sinta-se à vontade para contribuir com o projeto! Abra uma issue ou envie um pull request.
-
 ## 📝 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT.
 
 ## 📧 Contato
 
-- Email: seu-email@exemplo.com
-- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-perfil)
-- GitHub: [seu-github](https://github.com/seu-usuario)
+- Email: rodrigo.m.fazenda@gmail.com
+- LinkedIn: [seu-linkedin](https://www.linkedin.com/in/rodrigo-fazenda-80b7a4349/)
+- GitHub: [seu-github](https://github.com/fazenda451)
 
 ---
 
-Desenvolvido com ❤️ por [Seu Nome]
+Desenvolvido Por Rodrigo Fazenda

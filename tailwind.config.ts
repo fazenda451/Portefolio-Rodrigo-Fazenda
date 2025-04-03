@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				blue: {
+					50: '#e6f1fe',
+					100: '#cce3fd',
+					200: '#99c7fb',
+					300: '#66abf9',
+					400: '#338ff7',
+					500: '#0073f5',
+					600: '#005cc4',
+					700: '#004593',
+					800: '#002e62',
+					900: '#001731',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +97,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				slideUp: {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
+				wave: {
+					'0%': { transform: 'rotate(0.0deg)' },
+					'10%': { transform: 'rotate(14.0deg)' },
+					'20%': { transform: 'rotate(-8.0deg)' },
+					'30%': { transform: 'rotate(14.0deg)' },
+					'40%': { transform: 'rotate(-4.0deg)' },
+					'50%': { transform: 'rotate(10.0deg)' },
+					'60%': { transform: 'rotate(0.0deg)' },
+					'100%': { transform: 'rotate(0.0deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeIn 0.5s ease-in-out',
+				'slide-up': 'slideUp 0.5s ease-in-out',
+				'wave': 'wave 1.5s infinite'
 			}
 		}
 	},

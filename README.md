@@ -60,8 +60,8 @@ Este projeto está sob a licença MIT.
 ## 📧 Contato
 
 - Email: rodrigo.m.fazenda@gmail.com
-- LinkedIn: [seu-linkedin](https://www.linkedin.com/in/rodrigo-fazenda-80b7a4349/)
-- GitHub: [seu-github](https://github.com/fazenda451)
+- LinkedIn: [linkedin](https://www.linkedin.com/in/rodrigo-fazenda-80b7a4349/)
+- GitHub: [github](https://github.com/fazenda451)
 
 ---
 

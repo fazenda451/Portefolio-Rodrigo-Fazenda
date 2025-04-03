@@ -5,44 +5,44 @@
 
 @layer base {
   :root {
-    --background: 225 25% 97%;
-    --foreground: 225 25% 15%;
+    --background: 250 25% 97%;
+    --foreground: 250 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 225 25% 15%;
+    --card-foreground: 250 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 225 25% 15%;
+    --popover-foreground: 250 25% 15%;
 
-    --primary: 222 83% 55%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 260 83% 55%;
+    --primary-foreground: 250 40% 98%;
 
-    --secondary: 210 20% 94%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 250 20% 94%;
+    --secondary-foreground: 260 47% 11%;
 
-    --muted: 210 20% 94%;
-    --muted-foreground: 220 8% 50%;
+    --muted: 250 20% 94%;
+    --muted-foreground: 260 8% 50%;
 
-    --accent: 210 20% 94%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 250 20% 94%;
+    --accent-foreground: 260 47% 11%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 250 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222 83% 55%;
+    --border: 254.3 31.8% 91.4%;
+    --input: 254.3 31.8% 91.4%;
+    --ring: 260 83% 55%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-foreground: 250 5.3% 26.1%;
+    --sidebar-primary: 250 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 250 4.8% 95.9%;
+    --sidebar-accent-foreground: 250 5.9% 10%;
+    --sidebar-border: 260 13% 91%;
+    --sidebar-ring: 257.2 91.2% 59.8%;
   }
 
   * {
@@ -65,10 +65,10 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent;
   }
   
   .button-gradient {
-    @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700;
+    @apply bg-gradient-to-r from-purple-500 to-purple-600 text-white hover:from-purple-600 hover:to-purple-700;
   }
 }

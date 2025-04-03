@@ -18,21 +18,21 @@ const Header = () => {
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold text-blue-500">
+        <a href="#" className="text-xl font-bold text-purple-500">
           Portfólio
         </a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#home" className="text-foreground hover:text-blue-500 transition-colors">Início</a>
-          <a href="#about" className="text-foreground hover:text-blue-500 transition-colors">Sobre</a>
-          <a href="#projects" className="text-foreground hover:text-blue-500 transition-colors">Projetos</a>
-          <a href="#skills" className="text-foreground hover:text-blue-500 transition-colors">Habilidades</a>
-          <a href="#contact" className="text-foreground hover:text-blue-500 transition-colors">Contato</a>
+          <a href="#home" className="text-foreground hover:text-purple-500 transition-colors">Início</a>
+          <a href="#about" className="text-foreground hover:text-purple-500 transition-colors">Sobre</a>
+          <a href="#projects" className="text-foreground hover:text-purple-500 transition-colors">Projetos</a>
+          <a href="#skills" className="text-foreground hover:text-purple-500 transition-colors">Competências</a>
+          <a href="#contact" className="text-foreground hover:text-purple-500 transition-colors">Contacto</a>
         </nav>
         
         <Button className="hidden md:block button-gradient">
-          Download CV
+          Descarregar CV
         </Button>
         
         {/* Mobile Menu Button */}
@@ -48,13 +48,13 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg absolute w-full">
           <nav className="flex flex-col space-y-4 p-6">
-            <a href="#home" className="text-foreground hover:text-blue-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Início</a>
-            <a href="#about" className="text-foreground hover:text-blue-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Sobre</a>
-            <a href="#projects" className="text-foreground hover:text-blue-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Projetos</a>
-            <a href="#skills" className="text-foreground hover:text-blue-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Habilidades</a>
-            <a href="#contact" className="text-foreground hover:text-blue-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Contato</a>
+            <a href="#home" className="text-foreground hover:text-purple-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Início</a>
+            <a href="#about" className="text-foreground hover:text-purple-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Sobre</a>
+            <a href="#projects" className="text-foreground hover:text-purple-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Projetos</a>
+            <a href="#skills" className="text-foreground hover:text-purple-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Competências</a>
+            <a href="#contact" className="text-foreground hover:text-purple-500 transition-colors" onClick={() => setIsMenuOpen(false)}>Contacto</a>
             <Button className="w-full button-gradient">
-              Download CV
+              Descarregar CV
             </Button>
           </nav>
         </div>

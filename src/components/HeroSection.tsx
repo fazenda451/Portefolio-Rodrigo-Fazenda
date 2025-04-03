@@ -7,21 +7,21 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-20 section-padding relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute -top-20 -right-20 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute -top-20 -right-20 w-96 h-96 bg-purple-100 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-purple-100 rounded-full blur-3xl opacity-20"></div>
       
       <div className="container mx-auto">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 animate-fade-in">
-            <p className="text-blue-500 font-medium mb-4">Olá, eu sou</p>
+            <p className="text-purple-500 font-medium mb-4">Olá, eu sou</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-gradient">Seu Nome</span>
+              <span className="text-gradient">Rodrigo Fazenda</span>
               <span className="inline-block animate-wave ml-4">👋</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">Desenvolvedor Web & Designer</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
               Eu crio experiências digitais que combinam design e funcionalidade
-              para ajudar empresas a alcançarem seus objetivos.
+              para ajudar empresas a alcançarem os seus objetivos.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -34,23 +34,23 @@ const HeroSection = () => {
             </div>
             
             <div className="flex items-center gap-6">
-              <a href="#" className="text-muted-foreground hover:text-blue-500 transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-purple-500 transition-colors">
                 <Github size={24} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-blue-500 transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-purple-500 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-blue-500 transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-purple-500 transition-colors">
                 <Instagram size={24} />
               </a>
             </div>
           </div>
           
           <div className="md:w-1/2 flex justify-center animate-fade-in">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-100 overflow-hidden">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-purple-100 overflow-hidden">
               {/* Replace with your image */}
-              <div className="absolute inset-0 flex items-center justify-center text-blue-500 text-6xl font-bold">
-                SN
+              <div className="absolute inset-0 flex items-center justify-center text-purple-500 text-6xl font-bold">
+                RF
               </div>
             </div>
           </div>
@@ -58,8 +58,8 @@ const HeroSection = () => {
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <a href="#about" className="flex flex-col items-center">
-            <span className="text-sm text-muted-foreground mb-2">Role para baixo</span>
-            <ArrowDown className="text-blue-500" />
+            <span className="text-sm text-muted-foreground mb-2">Deslize para baixo</span>
+            <ArrowDown className="text-purple-500" />
           </a>
         </div>
       </div>

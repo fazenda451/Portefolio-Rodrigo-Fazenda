@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
+# Meu Portfólio Pessoal
 
-## Project info
+Olá! 👋 Este é o repositório do meu portfólio pessoal, desenvolvido com tecnologias modernas e boas práticas de desenvolvimento.
 
-**URL**: https://lovable.dev/projects/59452f2d-b0d9-42d5-966f-c425f3ea7729
+## 🚀 Sobre o Projeto
 
-## How can I edit this code?
+Este portfólio foi desenvolvido para mostrar minhas habilidades, projetos e experiências profissionais de forma interativa e moderna. A interface foi pensada para ser intuitiva e responsiva, proporcionando uma ótima experiência para visitantes.
 
-There are several ways of editing your application.
+## 🛠️ Tecnologias Utilizadas
 
-**Use Lovable**
+- **React** - Biblioteca para construção de interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Vite** - Build tool e servidor de desenvolvimento
+- **Tailwind CSS** - Framework CSS utilitário
+- **shadcn-ui** - Biblioteca de componentes reutilizáveis
+- **React Query** - Gerenciamento de estado e cache
+- **React Router** - Roteamento na aplicação
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/59452f2d-b0d9-42d5-966f-c425f3ea7729) and start prompting.
+## 🏗️ Como Executar o Projeto
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/Portefolio.git
+```
 
-**Use your preferred IDE**
+2. Instale as dependências:
+```bash
+npm install
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Inicie o servidor de desenvolvimento:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Acesse o projeto em `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Scripts Disponíveis
 
-**Use GitHub Codespaces**
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run preview` - Visualiza a build de produção localmente
+- `npm run lint` - Executa a verificação de código
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌐 Deploy
 
-## What technologies are used for this project?
+O projeto está configurado para deploy automático através do Lovable. Para fazer deploy manual:
 
-This project is built with:
+1. Build do projeto:
+```bash
+npm run build
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+2. Os arquivos de produção estarão disponíveis na pasta `dist`
 
-## How can I deploy this project?
+## 🤝 Contribuindo
 
-Simply open [Lovable](https://lovable.dev/projects/59452f2d-b0d9-42d5-966f-c425f3ea7729) and click on Share -> Publish.
+Sinta-se à vontade para contribuir com o projeto! Abra uma issue ou envie um pull request.
 
-## Can I connect a custom domain to my Lovable project?
+## 📝 Licença
 
-Yes it is!
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📧 Contato
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Email: seu-email@exemplo.com
+- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-perfil)
+- GitHub: [seu-github](https://github.com/seu-usuario)
+
+---
+
+Desenvolvido com ❤️ por [Seu Nome]

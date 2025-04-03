@@ -5,21 +5,24 @@ import { Progress } from "@/components/ui/progress";
 
 // Skills data
 const technicalSkills = [
-  { name: "HTML & CSS", percentage: 95 },
-  { name: "JavaScript", percentage: 90 },
-  { name: "React", percentage: 85 },
+  { name: "HTML & CSS", percentage: 80 },
+  { name: "PHP", percentage: 80 },
+  { name: "Laravel", percentage: 80 },
+  { name: "MySQL", percentage: 80 },
+  { name: "JavaScript", percentage: 65 },
+  { name: "React", percentage: 50 },
   { name: "Node.js", percentage: 80 },
-  { name: "UI/UX Design", percentage: 85 },
-  { name: "Responsive Design", percentage: 90 },
+  { name: "UI/UX Design", percentage: 80 },
+  { name: "Responsive Design", percentage: 80 },
+  { name: "Git", percentage: 70 },
+  { name: "AWS", percentage: 60 },
 ];
 
 const softSkills = [
-  "Comunicação eficaz",
   "Trabalho em equipa",
   "Gestão de projetos",
   "Resolução de problemas",
   "Adaptabilidade",
-  "Atenção aos detalhes",
   "Pensamento crítico",
   "Criatividade"
 ];
@@ -68,20 +71,7 @@ const SkillsSection = () => {
           </div>
         </div>
         
-        <div className="mt-16 bg-white p-8 rounded-2xl shadow-lg">
-          <h4 className="text-xl font-bold mb-8 pb-2 border-b">Ferramentas & Tecnologias</h4>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {/* Replace these divs with actual logos of technologies you use */}
-            {Array.from({ length: 12 }).map((_, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-purple-500 font-bold">
-                  T{index + 1}
-                </div>
-                <span className="mt-2 text-sm text-center">Tecnologia {index + 1}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   );

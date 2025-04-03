@@ -23,11 +23,11 @@ const AboutSection = () => {
             </h3>
             
             <p className="text-muted-foreground mb-8">
-              Com mais de 5 anos de experiência em desenvolvimento web e design, 
-              eu ajudo empresas a construírem presença online impactante através de 
-              websites modernos e intuitivos. A minha abordagem combina código limpo, 
-              design centrado no utilizador e as melhores práticas de SEO para criar 
-              projetos que não apenas parecem excelentes, mas também funcionam excecionalmente.
+            Sou estudante do 12º ano num curso profissional na Escola Secundária Gago Coutinho,
+            com foco em desenvolvimento de software. Tenho experiência em Laravel, Node.js e JavaScript,
+            e estou a desenvolver um e-commerce de motos como projeto final de curso (PAP). 
+            O meu objetivo é criar plataformas eficientes e intuitivas, com funcionalidades como sistemas de pontos
+            de desconto, personalização de produtos e gestão dinâmica de conteúdos.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -37,7 +37,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Experiência</h4>
-                  <p className="text-muted-foreground">5+ anos</p>
+                  <p className="text-muted-foreground">1 ano</p>
                 </div>
               </div>
               
@@ -51,15 +51,7 @@ const AboutSection = () => {
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-purple-50 rounded-lg text-purple-500">
-                  <Award size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-1">Certificações</h4>
-                  <p className="text-muted-foreground">10+ certificados</p>
-                </div>
-              </div>
+              
               
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-purple-50 rounded-lg text-purple-500">
@@ -67,7 +59,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Educação</h4>
-                  <p className="text-muted-foreground">Ciências da Computação</p>
+                  <p className="text-muted-foreground">Curso Profissional de Programação e Gestão de Sistemas Informáticos</p>
                 </div>
               </div>
             </div>

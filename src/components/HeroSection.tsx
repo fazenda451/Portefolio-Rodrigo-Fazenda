@@ -18,7 +18,7 @@ const HeroSection = () => {
               <span className="text-gradient">Rodrigo Fazenda</span>
               <span className="inline-block animate-wave ml-4">👋</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">Desenvolvedor Web & Designer</h2>
+            <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">Back-End Developer & Full Stack Developer</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
               Eu crio experiências digitais que combinam design e funcionalidade
               para ajudar empresas a alcançarem os seus objetivos.
@@ -34,13 +34,13 @@ const HeroSection = () => {
             </div>
             
             <div className="flex items-center gap-6">
-              <a href="#" className="text-muted-foreground hover:text-purple-500 transition-colors">
+              <a href="https://github.com/fazenda451" className="text-muted-foreground hover:text-purple-500 transition-colors">
                 <Github size={24} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-purple-500 transition-colors">
+              <a href="https://www.linkedin.com/in/rodrigo-fazenda-80b7a4349/" className="text-muted-foreground hover:text-purple-500 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-purple-500 transition-colors">
+              <a href="instagram.com/fazenda.451" className="text-muted-foreground hover:text-purple-500 transition-colors">
                 <Instagram size={24} />
               </a>
             </div>
@@ -48,9 +48,8 @@ const HeroSection = () => {
           
           <div className="md:w-1/2 flex justify-center animate-fade-in">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-purple-100 overflow-hidden">
-              {/* Replace with your image */}
+              <img src="/Eu.jpg" alt="Rodrigo Fazenda" className="w-full h-full object-cover" />
               <div className="absolute inset-0 flex items-center justify-center text-purple-500 text-6xl font-bold">
-                RF
               </div>
             </div>
           </div>

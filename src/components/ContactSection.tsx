@@ -1,23 +1,61 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { useContact } from '@/hooks/useContact';
+import { toast } from 'sonner';
 
 const ContactSection = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  
+  const contact = useContact();
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log('Form submitted');
+    try {
+      await contact.mutateAsync({
+        name: formData.name,
+        email: formData.email,
+        message: `${formData.subject}\n\n${formData.message}\n\nTelefone: ${formData.phone}`
+      });
+      
+      toast.success('Mensagem enviada com sucesso!');
+      
+      // Limpar o formulário
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      toast.error('Erro ao enviar mensagem. Tente novamente.');
+      console.error('Erro ao enviar mensagem:', error);
+    }
   };
 
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-2xl font-medium text-blue-500 mb-4">Contato</h2>
+          <h2 className="text-2xl font-medium text-purple-500 mb-4">Contato</h2>
           <h3 className="text-3xl md:text-4xl font-bold mb-6">
             Vamos Conversar!
           </h3>
@@ -33,7 +71,7 @@ const ContactSection = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-50 rounded-lg text-blue-500 shrink-0">
+                <div className="p-3 bg-purple-50 rounded-lg text-purple-500 shrink-0">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -43,7 +81,7 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-50 rounded-lg text-blue-500 shrink-0">
+                <div className="p-3 bg-purple-50 rounded-lg text-purple-500 shrink-0">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -53,7 +91,7 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-50 rounded-lg text-blue-500 shrink-0">
+                <div className="p-3 bg-purple-50 rounded-lg text-purple-500 shrink-0">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -63,7 +101,7 @@ const ContactSection = () => {
               </div>
             </div>
             
-            <div className="mt-8 p-6 bg-blue-500 rounded-lg text-white">
+            <div className="mt-8 p-6 bg-purple-500 rounded-lg text-white">
               <h5 className="text-lg font-semibold mb-3">Horário de Trabalho</h5>
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -91,7 +129,10 @@ const ContactSection = () => {
                     Nome
                   </label>
                   <Input 
-                    id="name" 
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Seu nome" 
                     className="w-full" 
                     required 
@@ -102,8 +143,11 @@ const ContactSection = () => {
                     Email
                   </label>
                   <Input 
-                    id="email" 
-                    type="email" 
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="Seu email" 
                     className="w-full" 
                     required 
@@ -114,7 +158,10 @@ const ContactSection = () => {
                     Telefone
                   </label>
                   <Input 
-                    id="phone" 
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     placeholder="Seu telefone" 
                     className="w-full" 
                   />
@@ -124,7 +171,10 @@ const ContactSection = () => {
                     Assunto
                   </label>
                   <Input 
-                    id="subject" 
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     placeholder="Assunto da mensagem" 
                     className="w-full" 
                     required 
@@ -137,16 +187,24 @@ const ContactSection = () => {
                   Mensagem
                 </label>
                 <Textarea 
-                  id="message" 
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Sua mensagem" 
                   className="w-full min-h-[150px]" 
                   required 
                 />
               </div>
               
-              <Button type="submit" className="button-gradient" size="lg">
+              <Button 
+                type="submit" 
+                className="bg-purple-500 hover:bg-purple-600 text-white" 
+                size="lg"
+                disabled={contact.isPending}
+              >
                 <Send size={18} className="mr-2" />
-                Enviar Mensagem
+                {contact.isPending ? 'Enviando...' : 'Enviar Mensagem'}
               </Button>
             </form>
           </Card>

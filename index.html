@@ -1,26 +1,609 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>meu-portefolio-online</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Fazenda | Desenvolvedor FullStack</title>
+    <meta name="description" content="Portfólio de Rodrigo Fazenda — Desenvolvedor FullStack especializado em Laravel, Node.js, JavaScript, PHP e tecnologias modernas.">
 
-    <meta property="og:title" content="meu-portefolio-online" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-symbol"></span>Rodrigo Fazenda<span class="brand-symbol"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Competências</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <p class="hero-greeting animate-on-scroll">
+                            <span class="greeting-line"></span>
+                            Olá, eu sou
+                        </p>
+                        <h1 class="hero-title animate-on-scroll">
+                            Rodrigo <span class="text-gradient">Fazenda</span>
+                        </h1>
+                        <div class="hero-typewriter animate-on-scroll">
+                            <span class="typewriter-prefix">&gt; </span>
+                            <span id="typewriter" class="typewriter-text"></span>
+                            <span class="typewriter-cursor">|</span>
+                        </div>
+                        <p class="hero-description animate-on-scroll">
+                            Desenvolvedor FullStack apaixonado por tecnologia. Trabalho com Laravel, Node.js, JavaScript e PHP, criando experiências digitais modernas e com atenção ao detalhe.
+                        </p>
+                        <div class="hero-cta animate-on-scroll">
+                            <a href="#projects" class="btn btn-primary-custom me-3">
+                                <i class="bi bi-rocket-takeoff me-2"></i>Ver Projetos
+                            </a>
+                            <a href="#contact" class="btn btn-outline-custom">
+                                <i class="bi bi-envelope me-2"></i>Contactar
+                            </a>
+                        </div>
+                        <div class="hero-socials animate-on-scroll">
+                            <a href="https://github.com/fazenda451" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fazenda.451/" target="_blank" class="social-link" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="mailto:rodrigo.m.fazenda@gmail.com" class="social-link" aria-label="Email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            <a href="https://discord.com/" target="_blank" class="social-link" aria-label="Discord">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-visual animate-on-scroll">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                                <span class="code-title">sobre-mim.js</span>
+                            </div>
+                            <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">nome</span>: <span class="code-string">"Rodrigo Fazenda"</span>,
+  <span class="code-prop">idade</span>: <span class="code-bool">19</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"FullStack Dev"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"Laravel"</span>, <span class="code-string">"PHP"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"MySQL"</span>
+  ],
+  <span class="code-prop">disponivel</span>: <span class="code-bool">true</span>,
+  <span class="code-func">contactar</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Vamos trabalhar!"</span>;
+  }
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="mouse-wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-person-fill me-2"></i>Sobre Mim</span>
+                <h2 class="section-title">Quem sou <span class="text-gradient">eu?</span></h2>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="about-image-wrapper animate-on-scroll">
+                        <div class="about-image-frame">
+                            <img src="assets/me.jpg" alt="Rodrigo Fazenda" class="about-image" id="profileImage">
+                            <div class="about-image-border"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content animate-on-scroll">
+                        <h3 class="about-subtitle">Transformo ideias em experiências digitais</h3>
+                        <p class="about-text">
+                            Com 19 anos e uma paixão imensa pelo desenvolvimento de software, 
+                            especializei-me na criação de aplicações web completas e robustas, 
+                            desde a interface do utilizador até à arquitetura no backend.
+                        </p>
+                        <p class="about-text">
+                            O meu percurso autodidata levou-me a focar e dominar ferramentas 
+                            como o <strong>Laravel</strong> e <strong>Node.js</strong>, 
+                            permitindo-me entregar projetos reais de elevado valor, tais como 
+                            plataformas de e-commerce e sistemas de gestão dinâmicos.
+                        </p>
+                        <p class="about-text">
+                            Sou movido pela resolução de problemas e procuro constantemente 
+                            novos desafios para criar soluções que tenham um impacto positivo. 
+                            Se tens uma ideia ambiciosa, eu tenho o código para a concretizar.
+                        </p>
+                        <div class="about-info-grid">
+                            <div class="about-info-item">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Portugal</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="bi bi-calendar3"></i>
+                                <span>19 Anos</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="bi bi-briefcase-fill"></i>
+                                <span>Disponível</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="bi bi-mortarboard-fill"></i>
+                                <span>Autodidata</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary-custom mt-4">
+                            <i class="bi bi-download me-2"></i>Descarregar CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section-padding section-alt">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-tools me-2"></i>Competências</span>
+                <h2 class="section-title">As minhas <span class="text-gradient">Skills</span></h2>
+            </div>
+
+            <div class="skills-grid mt-5">
+                <!-- Frontend -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind">
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" alt="jQuery">
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <i class="bi bi-hdd-stack-fill"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel">
+                            <span>Laravel</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-chip">
+                            <i class="bi bi-hdd-network-fill chip-icon"></i>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <i class="bi bi-gear-fill"></i>
+                        <h3>Ferramentas</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="invert-icon">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="npm">
+                            <span>npm</span>
+                        </div>
+                        <div class="skill-chip">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/composer/composer-original.svg" alt="Composer">
+                            <span>Composer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-folder-fill me-2"></i>Projetos</span>
+                <h2 class="section-title">Trabalho <span class="text-gradient">recente</span></h2>
+                <p class="section-subtitle">Uma seleção dos meus projetos mais recentes</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters text-center mt-4 animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="fullstack">FullStack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+            </div>
+
+            <div class="projects-grid mt-5">
+                <!-- Project 1: Bikes By Fazenda -->
+                <div class="project-card animate-on-scroll" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="bi bi-bicycle"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Ver Demo"><i class="bi bi-eye-fill"></i></a>
+                                <a href="https://github.com/fazenda451" target="_blank" class="project-link" aria-label="Ver Código"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Bikes By Fazenda</h3>
+                        <p class="project-desc">Plataforma e-commerce completa para motas — catálogo com filtros, carrinho, pagamentos Stripe, sistema de pontos, painel admin com relatórios PDF e gestão de encomendas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel 11</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Sintra Clássicos -->
+                <div class="project-card animate-on-scroll" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="bi bi-car-front-fill"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Ver Demo"><i class="bi bi-eye-fill"></i></a>
+                                <a href="https://github.com/fazenda451" target="_blank" class="project-link" aria-label="Ver Código"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sintra Clássicos</h3>
+                        <p class="project-desc">Website para comunidade de carros clássicos em Sintra — eventos, galeria dinâmica com CMS, mapa interativo Google Maps, agenda anual e design vintage responsivo.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Decap CMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Visualz Studio -->
+                <div class="project-card animate-on-scroll" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="bi bi-scissors"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Ver Demo"><i class="bi bi-eye-fill"></i></a>
+                                <a href="https://github.com/fazenda451" target="_blank" class="project-link" aria-label="Ver Código"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Visualz Studio</h3>
+                        <p class="project-desc">Website premium dark para barbearia e estúdio de tatuagem — galeria interativa, integração Fresha para agendamentos, Google Maps e design 100% responsivo.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">shadcn/ui</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Little World Magic Hotel -->
+                <div class="project-card animate-on-scroll" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Ver Demo"><i class="bi bi-eye-fill"></i></a>
+                                <a href="https://github.com/fazenda451" target="_blank" class="project-link" aria-label="Ver Código"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Little World Hotel & SPA</h3>
+                        <p class="project-desc">Aplicação web para hotel 5 estrelas em Albufeira — quartos temáticos, reservas, gastronomia, lazer e missão social, com UI premium e componentes acessíveis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">shadcn/ui</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section-padding section-alt">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-tag"><i class="bi bi-chat-dots-fill me-2"></i>Contacto</span>
+                <h2 class="section-title">Vamos <span class="text-gradient">conversar?</span></h2>
+                <p class="section-subtitle">Estou disponível para novos projetos e oportunidades</p>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-info animate-on-scroll">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>rodrigo.m.fazenda@gmail.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <h4>Localização</h4>
+                            <p>Portugal</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <h4>Disponibilidade</h4>
+                            <p>Aberto a oportunidades</p>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="https://github.com/fazenda451" target="_blank" class="contact-social-link" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fazenda.451/" target="_blank" class="contact-social-link" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="mailto:rodrigo.m.fazenda@gmail.com" class="contact-social-link" aria-label="Gmail">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            <a href="#" class="contact-social-link" aria-label="Discord" title="fazenda451">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="contactForm" class="contact-form animate-on-scroll">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control custom-input" id="nameInput" placeholder="O seu nome" required>
+                            <label for="nameInput">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control custom-input" id="emailInput" placeholder="email@exemplo.com" required>
+                            <label for="emailInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control custom-input" id="subjectInput" placeholder="Assunto">
+                            <label for="subjectInput">Assunto</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <textarea class="form-control custom-input" id="messageInput" placeholder="A sua mensagem" style="height: 150px;" required></textarea>
+                            <label for="messageInput">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100 btn-lg" id="submitBtn">
+                            <span class="btn-text">
+                                <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                            </span>
+                            <span class="btn-loading d-none">
+                                <span class="spinner-border spinner-border-sm me-2"></span>A enviar...
+                            </span>
+                        </button>
+                        <div id="formAlert" class="mt-3 d-none"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-grid">
+                <!-- Brand Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-brand-section">
+                        <div class="footer-brand">
+                            <span class="brand-symbol"></span>Rodrigo Fazenda<span class="brand-symbol"></span>
+                        </div>
+                        <p class="footer-about">
+                            Desenvolvedor FullStack apaixonado por tecnologia. Focado em criar soluções web modernas e eficientes.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="https://github.com/fazenda451" target="_blank" class="footer-social" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fazenda.451/" target="_blank" class="footer-social" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="mailto:rodrigo.m.fazenda@gmail.com" class="footer-social" aria-label="Gmail">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            <a href="#" class="footer-social" aria-label="Discord" title="fazenda451">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-heading">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="bi bi-chevron-right"></i> Início</a></li>
+                        <li><a href="#about"><i class="bi bi-chevron-right"></i> Sobre</a></li>
+                        <li><a href="#skills"><i class="bi bi-chevron-right"></i> Skills</a></li>
+                        <li><a href="#projects"><i class="bi bi-chevron-right"></i> Projetos</a></li>
+                        <li><a href="#contact"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Technologies -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-heading">Tecnologias</h4>
+                    <div class="footer-tech-tags">
+                        <span class="footer-tech">Laravel</span>
+                        <span class="footer-tech">PHP</span>
+                        <span class="footer-tech">React</span>
+                        <span class="footer-tech">TypeScript</span>
+                        <span class="footer-tech">Node.js</span>
+                        <span class="footer-tech">JavaScript</span>
+                        <span class="footer-tech">MySQL</span>
+                        <span class="footer-tech">Bootstrap</span>
+                        <span class="footer-tech">Tailwind</span>
+                        <span class="footer-tech">Git</span>
+                    </div>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:rodrigo.m.fazenda@gmail.com">rodrigo.m.fazenda@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Portugal</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-discord"></i>
+                            <span>fazenda451</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Disponível para projetos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p class="footer-copy">&copy; 2026 Rodrigo Fazenda. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
 </html>

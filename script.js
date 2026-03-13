@@ -197,8 +197,14 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const videoSrc = btn.getAttribute('data-video-src');
             if (videoSrc) {
+                // If there's a preloaded hidden video with this source, grab it or just set the source directly
+                // (Setting the src to a URL already cached by the browser via the preload tags will be instantaneous)
                 modalVideo.src = videoSrc;
                 videoModal.classList.add('active');
+                
+                // Forces load from the preloaded cache
+                modalVideo.load();
+                
                 modalVideo.play().catch(e => console.log("Autoplay blocked:", e));
                 updatePlayPauseIcon();
             }

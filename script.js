@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formAlert = document.getElementById('formAlert');
     const submitBtn = document.getElementById('submitBtn');
 
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const btnText = submitBtn.querySelector('.btn-text');
@@ -361,25 +361,48 @@ document.addEventListener('DOMContentLoaded', () => {
         btnLoading.classList.remove('d-none');
         submitBtn.disabled = true;
 
-        // Simulate form submission
-        setTimeout(() => {
+        const data = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Show success message
+                formAlert.className = 'mt-3 alert alert-success';
+                formAlert.innerHTML = '<i class="bi bi-check-circle-fill me-2"></i>Mensagem enviada com sucesso! Responderei em breve.';
+                formAlert.classList.remove('d-none');
+                contactForm.reset();
+            } else {
+                let responseData = await response.json();
+                if (Object.hasOwn(responseData, 'errors')) {
+                    formAlert.innerHTML = responseData["errors"].map(error => error["message"]).join(", ");
+                } else {
+                    formAlert.innerHTML = '<i class="bi bi-exclamation-triangle-fill me-2"></i>Ocorreu um erro ao enviar a mensagem.';
+                }
+                formAlert.className = 'mt-3 alert alert-danger';
+                formAlert.classList.remove('d-none');
+            }
+        } catch (error) {
+            formAlert.className = 'mt-3 alert alert-danger';
+            formAlert.innerHTML = '<i class="bi bi-exclamation-triangle-fill me-2"></i>Ocorreu um erro na rede ao enviar a mensagem.';
+            formAlert.classList.remove('d-none');
+        } finally {
+            // Re-enable button
             btnText.classList.remove('d-none');
             btnLoading.classList.add('d-none');
             submitBtn.disabled = false;
 
-            // Show success message
-            formAlert.className = 'mt-3 alert alert-success';
-            formAlert.innerHTML = '<i class="bi bi-check-circle-fill me-2"></i>Mensagem enviada com sucesso! Responderei em breve.';
-            formAlert.classList.remove('d-none');
-
-            // Reset form
-            contactForm.reset();
-
             // Hide alert after 5 seconds
             setTimeout(() => {
                 formAlert.classList.add('d-none');
-            }, 5000);
-        }, 1500);
+            }, 6000);
+        }
     });
 
     // ===== Smooth Scroll for anchor links =====

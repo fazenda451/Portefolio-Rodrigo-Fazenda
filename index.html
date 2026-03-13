@@ -381,7 +381,7 @@
                         <div class="project-overlay">
                             <div class="project-links">
                                 <button class="project-link play-video-btn" aria-label="Ver Vídeo" title="Ver Vídeo" data-video-src="assets/Video/VisualzStudio - Website Video.mov"><i class="bi bi-play-fill"></i></button>
-                                <a href="https://visualzstudio.pt" target="_blank" class="project-link" aria-label="Ver Demo" title="Ver Demo"><i class="bi bi-window"></i></a>
+                                <a href="https://visual-studio-conceito.netlify.app" target="_blank" class="project-link" aria-label="Ver Demo" title="Ver Demo"><i class="bi bi-window"></i></a>
                                 <a href="https://github.com/fazenda451" target="_blank" class="project-link" aria-label="Ver Código" title="Ver Código"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
@@ -408,7 +408,7 @@
                         <div class="project-overlay">
                             <div class="project-links">
                                 <button class="project-link play-video-btn" aria-label="Ver Vídeo" title="Ver Vídeo" data-video-src="assets/Video/Little World Hotel & spa - Website Video.mov"><i class="bi bi-play-fill"></i></button>
-                                <a href="https://littleworldhotel.pt" target="_blank" class="project-link" aria-label="Ver Demo" title="Ver Demo"><i class="bi bi-window"></i></a>
+                                <a href="https://littleworldhotel.netlify.app" target="_blank" class="project-link" aria-label="Ver Demo" title="Ver Demo"><i class="bi bi-window"></i></a>
                                 <a href="https://github.com/fazenda451" target="_blank" class="project-link" aria-label="Ver Código" title="Ver Código"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
@@ -479,21 +479,21 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form id="contactForm" class="contact-form animate-on-scroll">
+                    <form id="contactForm" class="contact-form animate-on-scroll" action="https://formspree.io/f/xeerzgyn" method="POST">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control custom-input" id="nameInput" placeholder="O seu nome" required>
+                            <input type="text" name="name" class="form-control custom-input" id="nameInput" placeholder="O seu nome" required>
                             <label for="nameInput">Nome</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control custom-input" id="emailInput" placeholder="email@exemplo.com" required>
+                            <input type="email" name="email" class="form-control custom-input" id="emailInput" placeholder="email@exemplo.com" required>
                             <label for="emailInput">Email</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control custom-input" id="subjectInput" placeholder="Assunto">
+                            <input type="text" name="subject" class="form-control custom-input" id="subjectInput" placeholder="Assunto">
                             <label for="subjectInput">Assunto</label>
                         </div>
                         <div class="form-floating mb-4">
-                            <textarea class="form-control custom-input" id="messageInput" placeholder="A sua mensagem" style="height: 150px;" required></textarea>
+                            <textarea name="message" class="form-control custom-input" id="messageInput" placeholder="A sua mensagem" style="height: 150px;" required></textarea>
                             <label for="messageInput">Mensagem</label>
                         </div>
                         <button type="submit" class="btn btn-primary-custom w-100 btn-lg" id="submitBtn">

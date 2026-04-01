@@ -133,7 +133,7 @@ That's it no install, no build, no configuration. ✅
 | Project | Type | Tech Stack | Links |
 |---------|------|------------|-------|
 | **Bikes By Fazenda** | FullStack | Laravel 11, PHP, MySQL, Tailwind, Stripe | [GitHub](https://github.com/fazenda451) |
-| **Sintra Clássicos** | Frontend | HTML5, CSS3, JS, Bootstrap, Decap CMS | [Live](https://sintraclassicos.pt) · [GitHub](https://github.com/fazenda451) |
+| **Sintra Clássicos** | Frontend | HTML5, CSS3, JS, Bootstrap, Decap CMS | [Live](https://sintraclassicos.com) · [GitHub](https://github.com/fazenda451) |
 | **Visualz Studio** | Frontend | React, TypeScript, Vite, Tailwind, shadcn/ui | [Live](https://visual-studio-conceito.netlify.app) · [GitHub](https://github.com/fazenda451) |
 | **Little World Hotel & SPA** | Frontend | HTML5, CSS3, JS, Bootstrap 5 | [Live](https://littleworldhotel.netlify.app) · [GitHub](https://github.com/fazenda451) |
 | **Admin Dashboard** | Frontend | HTML5, CSS3, JS, Bootstrap, Chart.js | [Live](https://admin-dashboard-frontend-rf.netlify.app) · [GitHub](https://github.com/fazenda451/Admin-Dashboard---Front-end) |

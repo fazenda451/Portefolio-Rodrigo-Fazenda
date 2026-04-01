@@ -1,5 +1,5 @@
 /* ================================================
-   RODRIGO FAZENDA — PORTFOLIO SCRIPTS
+   RODRIGO FAZENDA PORTFOLIO SCRIPTS
    ================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

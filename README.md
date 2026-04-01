@@ -1,77 +1,165 @@
-# Portefólio - Rodrigo Fazenda 🚀
+<div align="center">
 
-Um portefólio pessoal moderno e dinâmico, desenhado de raiz para demonstrar o meu trabalho e percurso enquanto **FullStack Developer**. O website adota uma estética premium baseada em tendências modernas de web design, tais como o modo escuro (*Dark Mode*), efeitos de vidro (*Glassmorphism*), e animações fluidas, oferecendo uma experiência de utilizador imersiva.
+# 🚀 Rodrigo Fazenda Portfolio
 
----
+**Modern, high-performance personal portfolio built from scratch.**
 
-## 💻 Sobre o Projeto
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-Este portefólio funciona como um currículo digital vivo. Contém secções dedicadas a uma pequena apresentação profissional ("Sobre Mim"), competências técnicas ("Skills"), demonstração de projetos ("Projetos") com capacidade de visualização de vídeos estilo pop-up, e uma área de contacto em tempo real.
+<br>
 
-O projeto foi construído primariamente com tecnologias frontend "Vanilla" em prol do desempenho rápido sem necessidade de longos carregamentos via frameworks pesadas.
+A premium dark-themed portfolio website featuring glassmorphism effects, fluid animations, an interactive particle system, and a custom-built video player designed to showcase real-world projects and technical expertise.
 
-## ✨ Principais Funcionalidades
+[**🌐 View Live**](https://rodrigofazenda.netlify.app) · [**📬 Contact Me**](mailto:rodrigo.m.fazenda@gmail.com) · [**💼 LinkedIn**](https://www.linkedin.com/in/rodrigo-fazenda-80b7a4349/)
 
-- **Design Premium e Responsivo:** Otimizado para funcionar na perfeição quer em Desktop, Tablet ou Smartphones (Design *Mobile First* adaptado).
-- **Tema Dark Moderno:** Paleta de tons escuros acompanhada por detalhes e contornos de luz néon/vibrante, proporcionando alto contraste e visibilidade ao código/projetos.
-- **Animações Fluidas:** Utilização do `IntersectionObserver` para carregar secções com animação de forma suave enquanto o utilizador dá *scroll*.
-- **Lista Dinâmica de Projetos com Filtros:** Visualização simples entre "Todos", "FullStack" e "Frontend".
-- **Reprodutor de Vídeo Nativo (Modal):** Em vez de ligar a fontes externas pesadas ou usar vídeos com *autoplay*, os projetos abrem vídeos de formato `.mp4`/`.webm`/`.mov` num reprodutor modal elegante construído de raiz e com funções customizadas (como *play/pause*, progresso, controlo tátil de ecrã e gestão avançada de volume).
-- **Formulário de Contacto Funcional:** Implementado sob o [Formspree](https://formspree.io/), ligando e encaminhando as mensagens sem ser via base de dados dedicada, enviando todas as ocorrências diretamente para o correio eletrónico com verificação `AJAX` que evita o recarregamento.
-- **Efeito de Partículas Interativo (Hero Section):** Partículas animadas através da API de animações do CSS a flutuar no cabeçalho do site.
+</div>
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📋 Table of Contents
 
-- **Estruturação:** `HTML5` semântico
-- **Estilização e Layout:** `CSS3` Customizado (Grid, Flexbox, Variáveis nativas) + Base Estrutural de `Bootstrap 5.3` (primariamente para as grelhas).
-- **Animações e Interatividade:** `JavaScript` (ES6 Vanilla) - (Lógica assíncrona para Formulário, Componentes do Vídeo, Filtros, IntersectionObserver).
-- **Ícones e Tipografia:** `Bootstrap Icons` e Fontes do `Google Fonts` (Inter e Fira Code para a secção do snippet).
-- **Envio de e-mails:** [Formspree](https://formspree.io/) com Fetch API.
+- [About](#-about)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Featured Projects](#-featured-projects)
+- [Contact](#-contact)
+- [License](#-license)
 
 ---
 
-## 📁 Estrutura de Ficheiros
+## 💡 About
 
-O projeto foca-se na simplicidade dos ficheiros da Web tradicional:
+This portfolio serves as a **living digital résumé**, purpose-built to present my journey and work as a FullStack Developer. Rather than relying on heavy frameworks, the entire site is crafted with vanilla technologies to ensure **instant load times**, **smooth 60fps animations**, and **zero dependency bloat**.
 
-```text
-├── index.html            <- Estrutura integral de todo o HTML (Single Page Application view)
-├── styles.css            <- Variáveis de cor, design do layout, estilos globais e animações customizadas
-├── script.js             <- Controlos lógicos (Scroll Interativo/Navbar, Video modal player, Formulário HTTP)
-└── assets
-    ├── IMG/              <- Todas as fotografias do utilizador, Favicons e Capas (Posters) dos Projetos
-    ├── Video/            <- Vídeos pequenos (.mov, .mkv, .mp4) relativos às demos dos desenvolvimentos
-    └── CV.pdf            <- Recurso pronto a descarregar
+### Design Philosophy
+
+| Principle | Implementation |
+|-----------|----------------|
+| **Dark Mode First** | Deep-tone palette with neon/vibrant accent highlights for maximum contrast and readability |
+| **Glassmorphism** | Frosted-glass cards and overlays with `backdrop-filter` for a premium layered appearance |
+| **Motion & Delight** | `IntersectionObserver`-driven scroll animations, typewriter effect, floating particles, and micro-interactions |
+| **Mobile First** | Fully responsive across all breakpoints desktop, tablet, and smartphone |
+| **Performance** | No build step required; pure HTML/CSS/JS served statically with minimal overhead |
+
+---
+
+## ✨ Features
+
+- **🎨 Premium Dark UI**  Curated color palette with neon accents and smooth gradients
+- **🖥️ Responsive Design**  Flawless rendering on all devices and screen sizes
+- **✍️ Typewriter Hero**  Animated code-style greeting with rotating role titles
+- **🌀 Interactive Particles**  CSS-animated floating particle system in the hero section
+- **📂 Project Showcase with Filters**  Filter projects by category: *All*, *FullStack*, *Frontend*, *Backend*
+- **🎬 Custom Video Modal Player**  Built entirely from scratch with:
+  - Play/Pause, progress scrubbing, and time display
+  - Volume control with mute toggle
+  - Fullscreen support
+  - Touch-friendly controls for mobile
+- **📩 Functional Contact Form**  Powered by [Formspree](https://formspree.io/) with AJAX submission (no page reload)
+- **🌓 Theme Toggle**  Light/Dark mode switcher
+- **⬆️ Back-to-Top Button**  Smooth scroll with animated visibility
+- **📥 Downloadable CV**  One-click PDF download directly from the About section
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technologies |
+|-------|-------------|
+| **Structure** | HTML5 (Semantic) |
+| **Styling** | CSS3 Custom Properties, Flexbox, Grid + Bootstrap 5.3 (grid system) |
+| **Logic** | JavaScript ES6+ (Vanilla) async form handling, video player, filters, IntersectionObserver |
+| **Icons** | [Bootstrap Icons](https://icons.getbootstrap.com/) |
+| **Typography** | [Google Fonts](https://fonts.google.com/) Inter (UI) + Fira Code (code snippets) |
+| **Form Backend** | [Formspree](https://formspree.io/) via Fetch API |
+
+---
+
+## 📁 Project Structure
+
+```
+Portefolio/
+├── index.html                 # Single-page application (all sections)
+├── styles.css                 # Design system: variables, layout, animations
+├── script.js                  # Interactive logic: navbar, video player, form, scroll
+├── README.md
+└── assets/
+    ├── IMG/                   # Profile photos, favicons, project posters/covers
+    ├── Video/                 # Project demo recordings (.mov, .mkv, .mp4)
+    └── Rodrigo Fazenda Pt.pdf # Downloadable CV
 ```
 
----
-
-## 🚀 Como Visualizar ou Correr o Portefólio
-
-Sendo um projeto que não exige linguagens de lado de servidor em desenvolvimento (não requer Node modules pesados ou um ambiente PHP), podes correr localmente de forma muito rápida.
-
-**Passos:**
-
-1. Fazer clone/download do repositório:
-```bash
-git clone https://github.com/fazenda451/Portefolio-Rodrigo-Fazenda.git
-```
-2. Abrir a pasta do projeto.
-3. Usar a extensão **Live Server** (do VSCode) e correr com o _Right-click_ em `index.html` > _Open with Live Server_. Em alternativa, clicar simplesmente em e abrir manualmente o ficheiro `index.html` no teu Browser preferido.
+> **Note:** This is a fully static project no build tools, no `node_modules`, no server-side runtime required.
 
 ---
 
-## 📩 Ligações do Desenvolvedor
+## 🚀 Getting Started
 
-**Rodrigo Fazenda - FullStack Developer**
-- **Email:** rodrigo.m.fazenda@gmail.com
-- **LinkedIn:** [Rodrigo Fazenda](https://www.linkedin.com/in/rodrigo-fazenda-80b7a4349/)
-- **GitHub:** [fazenda451](https://github.com/fazenda451)
-- **Localização:** Portugal
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Edge, Safari)
+- *(Optional)* [VS Code](https://code.visualstudio.com/) with the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/fazenda451/Portefolio-Rodrigo-Fazenda.git
+   ```
+
+2. **Navigate to the project folder:**
+
+   ```bash
+   cd Portefolio-Rodrigo-Fazenda
+   ```
+
+3. **Open the site:**
+
+   - **Option A** Right-click `index.html` → *Open with Live Server* (recommended for hot-reload)
+   - **Option B** Double-click `index.html` to open directly in your browser
+
+That's it no install, no build, no configuration. ✅
+
+---
+
+## 📂 Featured Projects
+
+| Project | Type | Tech Stack | Links |
+|---------|------|------------|-------|
+| **Bikes By Fazenda** | FullStack | Laravel 11, PHP, MySQL, Tailwind, Stripe | [GitHub](https://github.com/fazenda451) |
+| **Sintra Clássicos** | Frontend | HTML5, CSS3, JS, Bootstrap, Decap CMS | [Live](https://sintraclassicos.pt) · [GitHub](https://github.com/fazenda451) |
+| **Visualz Studio** | Frontend | React, TypeScript, Vite, Tailwind, shadcn/ui | [Live](https://visual-studio-conceito.netlify.app) · [GitHub](https://github.com/fazenda451) |
+| **Little World Hotel & SPA** | Frontend | HTML5, CSS3, JS, Bootstrap 5 | [Live](https://littleworldhotel.netlify.app) · [GitHub](https://github.com/fazenda451) |
+| **Admin Dashboard** | Frontend | HTML5, CSS3, JS, Bootstrap, Chart.js | [Live](https://admin-dashboard-frontend-rf.netlify.app) · [GitHub](https://github.com/fazenda451/Admin-Dashboard---Front-end) |
+| **Backup Manager** | Backend | VB.NET, Database, Automation | *Professional Internship  Private* |
+
+---
+
+## 📬 Contact
+
+**Rodrigo Fazenda** FullStack Developer 🇵🇹
+
+| Channel | Link |
+|---------|------|
+| 📧 Email | [rodrigo.m.fazenda@gmail.com](mailto:rodrigo.m.fazenda@gmail.com) |
+| 💼 LinkedIn | [Rodrigo Fazenda](https://www.linkedin.com/in/rodrigo-fazenda-80b7a4349/) |
+| 🐙 GitHub | [@fazenda451](https://github.com/fazenda451) |
+| 📸 Instagram | [@fazenda.451](https://www.instagram.com/fazenda.451/) |
+| 🎮 Discord | `fazenda451` |
 
 > *"Transformo ideias em experiências digitais."*
+> I turn ideas into digital experiences.
 
 ---
-© 2026 Rodrigo Fazenda. Todos os direitos reservados.
+
+## 📄 License
+
+© 2026 Rodrigo Fazenda. All rights reserved.
+
+This project is provided for **personal and educational use only**. Unauthorized reproduction, distribution, or commercial use of any part of this project is not permitted without prior written consent.

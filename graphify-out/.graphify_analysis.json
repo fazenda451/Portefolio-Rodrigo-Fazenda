@@ -1,0 +1,191 @@
+{
+  "communities": {
+    "0": [
+      "assets_img_admin_dashboard_poster",
+      "assets_img_bikesbyfazenda_poster",
+      "assets_img_little_world_hotel_spa_poster",
+      "index_project_admindashboard",
+      "index_project_backupsmanager",
+      "index_project_bikesbyfazenda",
+      "index_project_littleworldhotel",
+      "index_projects_section",
+      "index_video_modal"
+    ],
+    "1": [
+      "index_contact_section",
+      "script",
+      "script_closemodal",
+      "script_formattime",
+      "script_handlescroll",
+      "script_toggleplay",
+      "script_updateactivenav",
+      "script_updateplaypauseicon",
+      "script_updatevolumeicon"
+    ],
+    "2": [
+      "assets_img_me_profile_photo",
+      "assets_rodrigo_fazenda_pt_curriculum_vitae",
+      "index_about_section",
+      "index_skills_section"
+    ],
+    "3": [
+      "assets_img_sintraclassicos_poster",
+      "assets_img_visualzstudio_poster",
+      "index_project_sintraclassicos",
+      "index_project_visualzstudio"
+    ],
+    "4": [
+      "index_hero_section",
+      "readme_design_philosophy",
+      "readme_portfolio_doc",
+      "script_typewrite"
+    ],
+    "5": [
+      "assets_img_favicon_icon"
+    ]
+  },
+  "cohesion": {
+    "0": 0.25,
+    "1": 0.25,
+    "2": 0.5,
+    "3": 0.5,
+    "4": 0.5,
+    "5": 1.0
+  },
+  "gods": [
+    {
+      "id": "index_projects_section",
+      "label": "Projects Showcase & Filter System",
+      "degree": 7
+    },
+    {
+      "id": "script_handlescroll",
+      "label": "handleScroll()",
+      "degree": 3
+    },
+    {
+      "id": "index_hero_section",
+      "label": "Hero Section (Interactive Typewriter & Particle System)",
+      "degree": 3
+    },
+    {
+      "id": "index_about_section",
+      "label": "About Section (Bio, CV Download & Experience Badge)",
+      "degree": 3
+    },
+    {
+      "id": "index_project_bikesbyfazenda",
+      "label": "Project: Bikes By Fazenda (Laravel E-Commerce)",
+      "degree": 3
+    },
+    {
+      "id": "index_project_sintraclassicos",
+      "label": "Project: Sintra Clássicos (Car Community & Decap CMS)",
+      "degree": 3
+    },
+    {
+      "id": "index_project_visualzstudio",
+      "label": "Project: Visualz Studio (React + Vite + shadcn)",
+      "degree": 3
+    },
+    {
+      "id": "script_typewrite",
+      "label": "typewrite()",
+      "degree": 2
+    },
+    {
+      "id": "script_updateactivenav",
+      "label": "updateActiveNav()",
+      "degree": 2
+    },
+    {
+      "id": "index_project_littleworldhotel",
+      "label": "Project: Little World Hotel & SPA (High Performance Booking)",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "About Section (Bio, CV Download & Experience Badge)",
+      "target": "Rodrigo Fazenda Profile Photograph",
+      "source_files": [
+        "index.html",
+        "assets/IMG/me.jpg"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ image); connects across different repos/directories"
+    },
+    {
+      "source": "About Section (Bio, CV Download & Experience Badge)",
+      "target": "Rodrigo Fazenda Curriculum Vitae (PDF)",
+      "source_files": [
+        "index.html",
+        "assets/Rodrigo Fazenda Pt.pdf"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ paper); connects across different repos/directories"
+    },
+    {
+      "source": "Project: Bikes By Fazenda (Laravel E-Commerce)",
+      "target": "Bikes By Fazenda Showcase Poster",
+      "source_files": [
+        "index.html",
+        "assets/IMG/Bikesbyfazenda.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ image); connects across different repos/directories"
+    },
+    {
+      "source": "Project: Sintra Clássicos (Car Community & Decap CMS)",
+      "target": "Sintra Clássicos Showcase Poster",
+      "source_files": [
+        "index.html",
+        "assets/IMG/SintraClassicos.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ image); connects across different repos/directories"
+    },
+    {
+      "source": "Project: Visualz Studio (React + Vite + shadcn)",
+      "target": "Visualz Studio Showcase Poster",
+      "source_files": [
+        "index.html",
+        "assets/IMG/VisualzStudio.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ image); connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Projects Showcase & Filter System` connect `Community 0` to `Community 3`?",
+      "why": "High betweenness centrality (0.126) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `handleScroll()` (e.g. with `Contact Form & Social Links (Formspree Integration)` and `script.js`) actually correct?",
+      "why": "`handleScroll()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Portfolio Documentation & Architecture`, `Skills Section (Frontend, Backend & Developer Tools)`, `Contact Form & Social Links (Formspree Integration)` to the rest of the system?",
+      "why": "12 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `typewrite()` connect `Community 4` to `Community 1`?",
+      "why": "High betweenness centrality (0.062) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `Hero Section (Interactive Typewriter & Particle System)` (e.g. with `typewrite()` and `Design Philosophy (Clean, Typographic, Responsive)`) actually correct?",
+      "why": "`Hero Section (Interactive Typewriter & Particle System)` has 2 INFERRED edges - model-reasoned connections that need verification."
+    }
+  ]
+}

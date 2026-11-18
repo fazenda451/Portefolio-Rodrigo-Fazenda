@@ -1,0 +1,521 @@
+{
+  "nodes": [
+    {
+      "id": "readme_portfolio_doc",
+      "label": "Portfolio Documentation & Architecture",
+      "file_type": "document",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "readme_design_philosophy",
+      "label": "Design Philosophy (Clean, Typographic, Responsive)",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_hero_section",
+      "label": "Hero Section (Interactive Typewriter & Particle System)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_about_section",
+      "label": "About Section (Bio, CV Download & Experience Badge)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_skills_section",
+      "label": "Skills Section (Frontend, Backend & Developer Tools)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_projects_section",
+      "label": "Projects Showcase & Filter System",
+      "file_type": "document",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_contact_section",
+      "label": "Contact Form & Social Links (Formspree Integration)",
+      "file_type": "document",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_video_modal",
+      "label": "Custom Video Modal Player Component",
+      "file_type": "document",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_project_bikesbyfazenda",
+      "label": "Project: Bikes By Fazenda (Laravel E-Commerce)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_project_sintraclassicos",
+      "label": "Project: Sintra Clássicos (Car Community & Decap CMS)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_project_visualzstudio",
+      "label": "Project: Visualz Studio (React + Vite + shadcn)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_project_littleworldhotel",
+      "label": "Project: Little World Hotel & SPA (High Performance Booking)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_project_admindashboard",
+      "label": "Project: Admin Dashboard (Glassmorphism & Chart.js)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "index_project_backupsmanager",
+      "label": "Project: Backup Manager (VB.NET & Automation)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_rodrigo_fazenda_pt_curriculum_vitae",
+      "label": "Rodrigo Fazenda Curriculum Vitae (PDF)",
+      "file_type": "paper",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\Rodrigo Fazenda Pt.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_img_me_profile_photo",
+      "label": "Rodrigo Fazenda Profile Photograph",
+      "file_type": "image",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\IMG\\me.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_img_bikesbyfazenda_poster",
+      "label": "Bikes By Fazenda Showcase Poster",
+      "file_type": "image",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\IMG\\Bikesbyfazenda.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_img_sintraclassicos_poster",
+      "label": "Sintra Clássicos Showcase Poster",
+      "file_type": "image",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\IMG\\SintraClassicos.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_img_visualzstudio_poster",
+      "label": "Visualz Studio Showcase Poster",
+      "file_type": "image",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\IMG\\VisualzStudio.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_img_little_world_hotel_spa_poster",
+      "label": "Little World Hotel & SPA Showcase Poster",
+      "file_type": "image",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\IMG\\Little World Hotel & Spa.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_img_admin_dashboard_poster",
+      "label": "Admin Dashboard Showcase Poster",
+      "file_type": "image",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\IMG\\admin-dashboard.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    },
+    {
+      "id": "assets_img_favicon_icon",
+      "label": "Portfolio Brand Favicon Icon",
+      "file_type": "image",
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\assets\\IMG\\favicon.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Rodrigo Fazenda",
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_portfolio_doc",
+      "target": "index_hero_section",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_design_philosophy",
+      "target": "index_hero_section",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_hero_section",
+      "target": "script_typewrite",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_about_section",
+      "target": "assets_rodrigo_fazenda_pt_curriculum_vitae",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_about_section",
+      "target": "assets_img_me_profile_photo",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_about_section",
+      "target": "index_skills_section",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_projects_section",
+      "target": "index_project_bikesbyfazenda",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_projects_section",
+      "target": "index_project_sintraclassicos",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_projects_section",
+      "target": "index_project_visualzstudio",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_projects_section",
+      "target": "index_project_littleworldhotel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_projects_section",
+      "target": "index_project_admindashboard",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_projects_section",
+      "target": "index_project_backupsmanager",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_project_bikesbyfazenda",
+      "target": "assets_img_bikesbyfazenda_poster",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_project_sintraclassicos",
+      "target": "assets_img_sintraclassicos_poster",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_project_visualzstudio",
+      "target": "assets_img_visualzstudio_poster",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_project_littleworldhotel",
+      "target": "assets_img_little_world_hotel_spa_poster",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_project_admindashboard",
+      "target": "assets_img_admin_dashboard_poster",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_projects_section",
+      "target": "index_video_modal",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_video_modal",
+      "target": "script_toggleplay",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_video_modal",
+      "target": "script_closemodal",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_video_modal",
+      "target": "script_formattime",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_project_bikesbyfazenda",
+      "target": "index_project_backupsmanager",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_project_sintraclassicos",
+      "target": "index_project_visualzstudio",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_contact_section",
+      "target": "script_handlescroll",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "portfolio_fullstack_work_showcase",
+      "label": "FullStack Web Applications Portfolio",
+      "nodes": [
+        "index_project_bikesbyfazenda",
+        "index_project_sintraclassicos",
+        "index_project_visualzstudio",
+        "index_project_littleworldhotel",
+        "index_project_admindashboard"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html"
+    },
+    {
+      "id": "interactive_ui_media_experience",
+      "label": "Interactive Video Demonstration System",
+      "nodes": [
+        "index_video_modal",
+        "script_toggleplay",
+        "script_closemodal",
+        "script_formattime"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\index.html"
+    }
+  ],
+  "input_tokens": 1200,
+  "output_tokens": 2400
+}

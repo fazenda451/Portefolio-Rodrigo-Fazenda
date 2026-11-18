@@ -1,0 +1,308 @@
+{
+  "nodes": [
+    {
+      "id": "script",
+      "label": "script.js",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L1",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "unobserve",
+            "receiver_type": "IntersectionObserver",
+            "lang": "typescript",
+            "line": "L129",
+            "file": "script.js"
+          },
+          {
+            "callee": "observe",
+            "receiver_type": "IntersectionObserver",
+            "lang": "typescript",
+            "line": "L134",
+            "file": "script.js"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "script_typewrite",
+      "label": "typewrite()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "script_handlescroll",
+      "label": "handleScroll()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L52",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "script_updateactivenav",
+      "label": "updateActiveNav()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L84",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "script_formattime",
+      "label": "formatTime()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L187",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "script_closemodal",
+      "label": "closeModal()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L215",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "script_toggleplay",
+      "label": "togglePlay()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L229",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "script_updateplaypauseicon",
+      "label": "updatePlayPauseIcon()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L237",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "script_updatevolumeicon",
+      "label": "updateVolumeIcon()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L299",
+      "_callable": true,
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "script",
+      "target": "script_typewrite",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_handlescroll",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_updateactivenav",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_formattime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_closemodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L215",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_toggleplay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L229",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_updateplaypauseicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L237",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_updatevolumeicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L299",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_typewrite",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_handlescroll",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "script.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_closemodal",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "script.js",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_toggleplay",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "script.js",
+      "source_location": "L248",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_updateplaypauseicon",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "script.js",
+      "source_location": "L250",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script_handlescroll",
+      "target": "script_updateactivenav",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_updateplaypauseicon",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_closemodal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L224",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_formattime",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L257",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "script",
+      "target": "script_updatevolumeicon",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L290",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "failed_sources": [],
+  "skipped_sources": [
+    "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\.vscode\\settings.json"
+  ],
+  "extracted_sources": [
+    "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\.vscode\\settings.json",
+    "C:\\Users\\rodri\\Documents\\GitHub\\Portefolio\\script.js"
+  ]
+}

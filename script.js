@@ -341,12 +341,8 @@ document.addEventListener('DOMContentLoaded', () => {
         particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
         particle.style.animationDelay = (Math.random() * 10) + 's';
 
-        // Random color between accent primary and secondary
-        if (Math.random() > 0.5) {
-            particle.style.background = '#7c3aed';
-        } else {
-            particle.style.background = '#06b6d4';
-        }
+        // Single accent colour — amber
+        particle.style.background = '#e8b04a';
 
         particlesContainer.appendChild(particle);
     }
